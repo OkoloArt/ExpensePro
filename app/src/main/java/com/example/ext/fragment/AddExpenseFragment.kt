@@ -87,15 +87,6 @@ class AddExpenseFragment : Fragment() {
         return formatter.format(date)
     }
 
-    fun isDateToday(): String {
-        val mDate = Calendar.getInstance() // just for example
-        if (DateUtils.isToday(mDate.timeInMillis)) {
-            //format one way
-            return "Today at ${currentTime()}"
-        }
-        return "false"
-    }
-
     fun showModalBottomSheet() {
         val modalBottomSheet = CategoryBottomModalFragment()
         fragmentManager?.let { modalBottomSheet.show(it, CategoryBottomModalFragment.TAG) }
