@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="cyan_blue">#141c25</color>
+    <color name="gradient_start_color">#162e34</color>
+    <color name="gradient_end_color">#151f29</color>
+    <color name="gradient_button_start_color">#1e2b39</color>
+    <color name="gradient_button_end_color">#1f464e</color>
+    <color name="gradient_save_button_start_color">#2bdbbd</color>
+    <color name="gradient_save_button_end_color">#32eef7</color>
+</resources>

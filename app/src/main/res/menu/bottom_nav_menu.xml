@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.ext.MainActivity">
+    <item
+        android:id="@+id/action_home"
+        android:icon="@drawable/ic_action_home"
+        android:title="@string/action_settings" />
+
+    <item
+        android:id="@+id/action_statistics"
+        android:icon="@drawable/ic_action_chart"
+        android:title="@string/action_statistics" />
+
+    <item
+        android:id="@+id/action_add_expense"
+        android:title=""/>
+</menu>

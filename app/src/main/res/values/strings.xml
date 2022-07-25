@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">ExT</string>
+    <string name="action_settings">Home</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="splash_sub_intro">All your spends and bills all at one place \n Track spending, bills and keep tabs of rising subscription costs</string>
+    <string name="my_budget">My Budget</string>
+    <string name="budget_amount">$4,000</string>
+    <string name="balance_text">Total(Expense)</string>
+    <string name="balance_amount">$2000</string>
+    <string name="add_budget">+</string>
+    <string name="expenses_text">Expenses</string>
+    <string name="action_statistics">Statistics</string>
+    <string name="action_add_expense">Add Expense</string>
+    <string name="get_started">Get Started</string>
+    <string name="cancel">Cancel</string>
+    <string name="title">Enter Amount</string>
+    <string name="accept">OK</string>
+    <string name="add_expense">Add Expenses</string>
+    <string name="save_expense">save</string>
+    <string name="expense_category">Pets</string>
+    <string name="delete_expense">Delete Expense</string>
+    <string name="select_option">select option</string>
+    <string name="previous_month_budget">Clear All Previous Expense</string>
+    <string name="show_statistics">Show Statistics</string>
+    <string name="splash_intro_text">Manage Your \n Expenses Easily</string>
+    <string name="set_budget">Set Budget</string>
+    <string name="optional_note">Note (optional)</string>
+    <string name="_0">0</string>
+    <string name="default_text">Pets</string>
+    <string name="expense_title">My Expense</string>
+    <string name="top_spent">Top Spent</string>
+
+    <string-array name="category">
+        <item>Select Category</item>
+        <item>Travel</item>
+        <item>Food &amp; Drinks</item>
+        <item>Entertainment</item>
+        <item>Shopping</item>
+        <item>Groceries</item>
+        <item>Bills</item>
+    </string-array>
+</resources>

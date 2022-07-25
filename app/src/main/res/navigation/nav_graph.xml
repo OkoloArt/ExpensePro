@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.ext.fragment.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_expenseListFragment"
+            app:destination="@id/expenseListFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_addOrEditExpenseFragment"
+            app:destination="@id/addOrEditExpenseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/expenseListFragment"
+        android:name="com.example.ext.fragment.ExpenseListFragment"
+        android:label="fragment_expense_list"
+        tools:layout="@layout/fragment_expense_list" >
+        <action
+            android:id="@+id/action_expenseListFragment_self"
+            app:destination="@id/expenseListFragment" />
+        <action
+            android:id="@+id/action_expenseListFragment_to_addOrEditExpenseFragment"
+            app:destination="@id/addOrEditExpenseFragment" />
+        <action
+            android:id="@+id/action_expenseListFragment_to_statisticsFragment"
+            app:destination="@id/statisticsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addOrEditExpenseFragment"
+        android:name="com.example.ext.fragment.AddExpenseFragment"
+        android:label="AddOrEditExpenseFragment" >
+        <action
+            android:id="@+id/action_addOrEditExpenseFragment_to_expenseListFragment"
+            app:destination="@id/expenseListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/statisticsFragment"
+        android:name="com.example.ext.fragment.StatisticsFragment"
+        android:label="fragment_statistics"
+        tools:layout="@layout/fragment_statistics" />
+    <fragment
+        android:id="@+id/categoryBottomModalFragment"
+        android:name="com.example.ext.fragment.CategoryBottomModalFragment"
+        android:label="fragment_category_bottom_modal"
+        tools:layout="@layout/fragment_category_bottom_modal" />
+</navigation>

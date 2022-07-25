@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/HP/AndroidStudioProjects/ExT/app/src/main/res/drawable/button_background.xml" value="0.15" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/ExT/app/src/main/res/drawable/button_background2.xml" value="0.15" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/ExT/app/src/main/res/drawable/cardview_background.xml" value="0.15" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/ExT/app/src/main/res/drawable/dialog_gradient.xml" value="0.15" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/ExT/app/src/main/res/drawable/gradient_background.xml" value="0.16" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/ExT/app/src/main/res/drawable/image_background.xml" value="0.15" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/ExT/app/src/main/res/drawable/rectangle_background.xml" value="0.15" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/ExT/app/src/main/res/drawable/relative_layout_custom.xml" value="0.15" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/ExT/app/src/main/res/drawable/save_button_gradient.xml" value="0.15" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/ExT/app/src/main/res/drawable/selector.xml" value="0.15" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/ExT/app/src/main/res/layout-v31/fragment_category_bottom_modal.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/ExT/app/src/main/res/layout/activity_main.xml" value="0.21" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/ExT/app/src/main/res/layout/bottom_modal.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/ExT/app/src/main/res/layout/bottom_modal_detail.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/ExT/app/src/main/res/layout/content_main.xml" value="0.24592391304347827" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/ExT/app/src/main/res/layout/dialog_layout.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/ExT/app/src/main/res/layout/expense_list_detail.xml" value="0.33" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/ExT/app/src/main/res/layout/fragment_add_or_edit_expense.xml" value="0.25" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/ExT/app/src/main/res/layout/fragment_category_bottom_modal.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/ExT/app/src/main/res/layout/fragment_expense_list.xml" value="0.25" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/ExT/app/src/main/res/layout/fragment_splash.xml" value="0.25" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/ExT/app/src/main/res/layout/fragment_statistics.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/ExT/app/src/main/res/layout/legend_list.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/ExT/app/src/main/res/layout/statistics_model.xml" value="0.271875" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/ExT/app/src/main/res/layout/statistics_model_detail.xml" value="0.33" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/ExT/app/src/main/res/layout/test_layout.xml" value="0.15760869565217392" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/ExT/app/src/main/res/menu/bottom_nav_menu.xml" value="0.18888888888888888" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/ExT/app/src/main/res/menu/menu_main.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/ExT/app/src/main/res/mipmap-anydpi-v26/ic_launcher_expense.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

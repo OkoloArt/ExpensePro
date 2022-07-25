@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="expenseListFragment"
+            type="com.example.ext.fragment.ExpenseListFragment" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_background"
+        android:paddingStart="15dp"
+        android:paddingTop="14dp"
+        android:paddingEnd="15dp"
+        tools:context=".fragment.ExpenseListFragment">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/bar_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oswald_medium"
+            android:text="@string/expense_title"
+            android:textAppearance="?attr/textAppearanceHeadline5"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/card_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bar_name"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="40dp"
+                android:layout_height="190dp"
+                android:background="@drawable/button_background"
+                android:onClick="@{() -> expenseListFragment.showDialog()}"
+                android:text="@string/add_budget"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                app:cardCornerRadius="15dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/ex" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="50dp"
+                    android:src="@drawable/visa"
+                    android:layout_marginEnd="10dp"
+                    android:layout_gravity="end"
+                    android:layout_height="50dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingStart="12dp"
+                    android:paddingTop="10dp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:fontFamily="@font/oswald_regular"
+                        android:text="@string/my_budget"
+                        android:textColor="@color/black"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/budget"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        app:fontFamily="@font/pt_sans_narrow_bold"
+                        android:textAppearance="?attr/textAppearanceHeadline5"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13dp"
+                        app:fontFamily="@font/oswald_regular"
+                        android:text="@string/balance_text"
+                        android:textColor="@color/black"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/balance"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/black"
+                        android:textAppearance="?attr/textAppearanceHeadline6"                        android:layout_height="wrap_content"
+                        app:fontFamily="@font/pt_sans_narrow_bold"
+                        android:layout_marginTop="10dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/expense_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card_layout"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/oswald_regular"
+            android:text="@string/expenses_text"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            android:textColor="@color/white" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/expense_list_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/expense_text"
+            android:layout_marginTop="-1dp"
+            android:scrollbars="none" />
+
+        <com.nambimobile.widgets.efab.ExpandableFabLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="16dp">
+
+            <com.nambimobile.widgets.efab.Overlay
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:overlay_color="@android:color/transparent"
+                app:overlay_openingAnimationDurationMs="1000"
+                app:overlay_orientation="portrait" />
+
+            <com.nambimobile.widgets.efab.ExpandableFab
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                app:efab_orientation="portrait" />
+
+            <com.nambimobile.widgets.efab.FabOption
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:onClick="@{() -> expenseListFragment.addExpense()}"
+                app:fab_icon="@drawable/ic_action_create"
+                app:label_text="Add Expense" />
+
+            <com.nambimobile.widgets.efab.FabOption
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:onClick="@{() -> expenseListFragment.showStatistics()}"
+                app:fab_icon="@drawable/ic_action_chart"
+                app:label_text="Statistics" />
+
+            <com.nambimobile.widgets.efab.FabOption
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:onClick="@{() -> expenseListFragment.deleteDialog()}"
+                app:fab_icon="@drawable/ic_action_delete"
+                app:label_text="Delete" />
+        </com.nambimobile.widgets.efab.ExpandableFabLayout>
+    </RelativeLayout>
+</layout>
