@@ -1,5 +1,5 @@
-# ExT
-> _What is the project?_ - The Ext project is an Expense Tracker that is accessible on a mobile device. It will allow users to keep tracks of money outflow 
+# ExpensePro
+> _What is the project?_ - The ExpensePro project is an Expense Tracker that is accessible on a mobile device. It will allow users to keep tracks of money outflow 
 
 > _What is the MVP ?_ - The minimal viable product is an expense tracker that perform data saving based on a user input and show the user the results
 
